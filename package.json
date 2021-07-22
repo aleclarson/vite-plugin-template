@@ -1,10 +1,10 @@
 {
-  "name": "vite-plugin-{{name}}",
+  "name": "{{name}}",
   "version": "0.0.0",
   "description": "{{description}}",
   "author": "Alec Larson",
   "license": "MIT",
-  "repository": "alloc/vite-plugin-{{name}}",
+  "repository": "alloc/{{name}}",
   "main": "dist/plugin.js",
   "files": [
     "src",

@@ -4,6 +4,12 @@ exports.form = {
   description: String,
 }
 
+const basename = path.basename(__dirname)
+
+// The identifier used when importing this plugin.
+const ident = basename.replace(/^vite-(plugin-)?/, '')
+
 exports.context = {
-  name: /^vite-plugin-(.+)$/.exec(path.basename(__dirname))[1],
+  name: basename,
+  ident,
 }

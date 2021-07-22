@@ -1,12 +1,10 @@
-import {{camelize name}} from 'vite-plugin-{{name}}'
-import reactPlugin from '@vitejs/plugin-react-refresh'
-import type { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
+import reactRefresh from '@vitejs/plugin-react-refresh'
+import {{camelize ident}} from '{{name}}'
 
-const config: UserConfig = {
+export default defineConfig({
   plugins: [
-    reactPlugin(),
-    {{camelize name}}(),
+    reactRefresh(),
+    {{camelize ident}}(),
   ],
-}
-
-export default config
+})
